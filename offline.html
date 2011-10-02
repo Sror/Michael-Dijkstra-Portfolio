@@ -1,0 +1,368 @@
+<!DOCTYPE html> 
+<html manifest="/offlinemain.manifest">
+	<head> 
+	<title>My Portfolio</title> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="_jquery_mobile.css" />
+  <link rel="stylesheet" href="_style.css" />
+	<script type="text/javascript" src="_jquery.js"></script>
+	<script type="text/javascript" src="_jquery_mobile.js"></script>
+	<script>
+  	$('div.ui-page').live("swipeleft", function(){
+  		var nextpage = $(this).next('div[data-type="block"]');
+  		// swipe using id of next page if exists
+  		if (nextpage.length > 0) {
+  			$.mobile.changePage(nextpage, 'slide');
+  		}
+  	});
+  	$('div.ui-page').live("swiperight", function(){
+  		var prevpage = $(this).prev('div[data-type="block"]');
+  		// swipe using id of next page if exists
+  		if (prevpage.length > 0) {
+  			$.mobile.changePage(prevpage, 'slide', true);
+  		}
+  	});
+  </script>
+	
+	<meta content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0' name='viewport'> 
+  <meta content='width=device-width; initial-scale=1.0' name='viewport'>
+</head> 
+<body> 
+
+<div id="home" data-role="page" data-theme="c">
+
+	<div data-role="content">	
+	  <h1>My Portfolio.</h1>
+    <ol class="blocks">
+      <li>
+        <a href="#ninety9bottles" data-transition="flip">
+          <img src="ninety9bottles.png">
+        </a>
+      </li>
+      <li>
+        <a href="#duckapp" data-transition="flip">
+          <img src="duckapp.png">
+        </a>
+      </li>
+      <li>
+        <a href="#listapp" data-transition="flip">
+          <img src="listapp.png">
+        </a>
+      </li>           
+      <li>
+        <a href="#logit" data-transition="flip">
+          <img src="logit.png">
+        </a>
+      </li>
+      <li id="michael">
+        <a href="#resume" data-transition="flip">
+          <img src="resume.jpg">
+        </a>
+      </li>
+      <li>
+        <a href="#anky" data-transition="flip">
+          <img src="anky.png">
+        </a>
+      </li>
+      <li>
+        <a href="#stef" data-transition="flip">
+          <img src="stef.png">
+        </a>
+      </li>
+      <li>
+        <a href="#dg" data-transition="flip">
+          <img src="dg.png">
+        </a>
+      </li>
+      <li>
+        <a href="#critta" data-transition="flip">
+          <img src="critta.png">
+        </a>
+      </li>           
+    </ol>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<div id="resume" data-type="block" data-role="page" data-theme="c">
+  
+	<div data-role="header">
+		<h1>Resume</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" class="content">	
+		<header role="banner"> 
+    		<hgroup> 
+      		<h1>Michael Dijkstra.</h1> 
+      		<h2>User interface designer and front-end developer.</h2> 
+    	  </hgroup> 
+    	</header> 
+
+    	<article> 
+
+    	  <section class="introduction"> 
+    	  	<figure> 
+    		    <img src="resume_1.jpeg"> 
+    	   </figure> 
+    	    <p>Passionate about <strong>web standards</strong> (making websites accessible to everyone), <strong>HTML5 and CSS3</strong> (the future of the web) and <strong>Responsive Web Design</strong> (designing for all devices). Love working with <strong>Ruby on Rails</strong> and building web applications that help real people.</p> 
+          <p>Managing all of this from home in <strong>Sydney, Australia</strong>.</p> 
+    	  </section> 
+
+    	  <section class="believe"> 
+    		  <h2>I believe</h2> 
+      		<ul> 
+      		  <li>Ideas are developed on paper with a thick black sharpie.</li> 
+      		  <li>Prototyping and design should happen in code, in the browser.</li> 
+      		  <li>Websites should respond to the user, not be static.</li> 
+      		  <li>A useful interface is more important than a beautiful interface.</li> 
+      		  <li>Copywriting is design and needs to be included from the beginning.</li> 
+      		</ul> 
+      	</section> 
+      	<section class="skills"> 
+      		<h2>Skills</h2> 
+      		<ul> 
+      		  <li>Hand code clean, well-structured, semantic HTML5 markup.</li> 
+      		  <li>Code clean, well-structured CSS3 that's cross browser compatible.</li> 
+      		  <li>Prefer to use Sass to create cleaner, more awesome CSS.</li> 
+      		  <li>Employ the Responsive Web Design principles.</li> 
+      		  <li>Script clean and unobtrusive Javascript (jQuery).</li> 
+      		  <li>Build sites with solid on-site SEO.</li>  		  
+      		  <li>Develop for Content Management Systems (Wordpress, ExpressionEngine).
+      		  <li>Build web applications using Ruby on Rails.</li> 
+      		  <li>Manage version control with Git.</li> 
+      		</ul> 
+      	</section>  					
+      	<section class="experience"> 
+      	  <h2>Experience</h2>  	  
+      		<h3>Duck App</h3> 
+    		  <p>Duck App is my recently rebranded freelance web design and development business. Duck App helps small business grow online by providing website design, website development, email marketing and online strategy services to businesses and organisations that don’t have the resources in-house. I'm involved in the entire website design and development process including project management, client management, content strategy, creative design, front-end development and back-end development. I also manage domains, emails and hosting for clients. <a href="http://duckapp.co">View site</a> and <a href="http://duckapp.co/portfolio">projects portfolio</a></p> 
+
+    			<h3>Ninety9 Bottles</h3> 
+
+      	  <p>In 2010 I was approached by Chippendale Cellars to discuss the concept for a new online wine store for an Australia wide audience. Starting with a clean slate, I was responsible for the business naming, logo design, corporate identity and branding, website design and development, email marketing and social media integration. In addition to this work I also developed two unique wine labels for the business and created a number of infographics and spin papers as marketing material. <a href="http://duckapp.co/portfolio/ninety9-bottles">View project</a></p> 
+
+    		  <h3>List App</h3> 
+    		  <p>List App is the easiest way to create, share and collaborate lists online. I designed and developed List App to scratch my own itch. I needed an easy way to create lists that I could share and collaborate on with clients and I wanted to develop a Ruby on Rails web application. I designed the user interface, coded the HTML, CSS and jQuery and developed the Rails backend. The app is currently being hosted on Heroku. <a href="http://list.duckapp.co">View site</a></p> 
+
+    		  <h3>Log[it]</h3> 
+    		  <p>Log[it] helps you keep track of all the important things, what ever they might be. Log[it] is a web application that allows you to easily log and keep track of anything you can attach a value to. I'm responsible for designing the user interface, coding the HTML, CSS and jQuery and developing the Rails backend. Log[it] is still in development. <a href="http://logitapp.com">View site</a></p> 
+      	</section> 
+      	<section class="contribution"> 	
+      	  <h2>Contribution</h2> 
+          <h3>Github</h3> 
+          <p>When I'm not working on client projects I like to give back to the web community. I started using the html5 reset template for front-end development work so I forked the repo on git and contributed a Compass and Sass version. I have also contributed a number of Sass mixins that I use in my daily workflow. <a href="https://github.com/micdijkstra">View Github account</a></p> 
+          <h3>Blog</h3> 
+          <p>I enjoy writing so when I have time I sit down and publish my thoughts on the Duck App blog. I'll cover everything to do with the web and share my thoughts on user interface design. <a href="http://duckapp.co/blog">View blog</a></p> 
+      	</section> 
+      	<section class="contact"> 	
+      	  <h2>Get in touch</h2> 
+          <p class="intro">If you'd like to keep the conversation going I'd love to hear from you.</p> 
+          <p> 
+    	      <span>Email</span> 
+      	    <a href="mailto:micdijkstra@gmail.com">micdijkstra@gmail.com</a> 
+      	  </p> 
+          <p> 
+          	<span>Phone</span> 
+          	+61 438 250 486
+          </p>      
+          <p> 
+          	<span>Twitter</span> 
+          	<a href="http://twitter.com/micdijkstra">twitter.com/micdijkstra</a> 
+          </p> 
+      	</section> 
+    	</article> 
+
+    	<footer> 
+    		<p><small>&copy; Copyright Michael Dijkstra 2011. All Rights Reserved.</small></p> 
+    	</footer>
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="ninety9bottles" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Ninety9 Bottles</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="ninety9bottles_1.png">
+	  </section>
+    <section>
+	    <img src="ninety9bottles_2.png">
+	  </section>
+    <section>
+	    <img src="ninety9bottles_3.png">
+    </section>
+    <section>	  
+	    <img src="ninety9bottles_4.png">
+	  </section>
+    <section>
+	    <img src="ninety9bottles_5.png">
+	  </section>
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="duckapp" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Duck App</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="duckapp_1.jpeg">
+	  </section>
+    <section>
+	    <img src="duckapp_2.jpeg">
+	  </section>
+    <section>
+	    <img src="duckapp_3.jpeg">
+    </section>
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="listapp" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>List App</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="listapp_1.jpeg">
+	  </section>
+    <section>
+	    <img src="listapp_2.png">
+	  </section>
+    <section>
+	    <img src="listapp_3.png">
+    </section>
+    <section>
+	    <img src="listapp_4.jpeg">
+    </section>    
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="logit" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Log[it]</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="logit_1.jpeg">
+	  </section>
+    <section>
+	    <img src="logit_2.jpeg">
+	  </section>
+    <section>
+	    <img src="logit_3.jpeg">
+    </section>
+    <section>
+	    <img src="logit_4.jpeg">
+    </section>    
+    <section>
+	    <img src="logit_5.jpeg">
+    </section>    
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="anky" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>ANKY Australia</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="anky_1.png">
+	  </section>
+    <section>
+	    <img src="anky_2.jpeg">
+	  </section>
+    <section>
+	    <img src="anky_3.jpeg">
+    </section>
+    <section>
+	    <img src="anky_4.jpeg">
+    </section>    
+    <section>
+	    <img src="anky_5.jpeg">
+    </section>    
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="marti" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Marti Portfolio</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="marti_1.jpeg">
+	  </section>
+    <section>
+	    <img src="marti_2.jpeg">
+	  </section>
+    <section>
+	    <img src="marti_3.jpeg">
+    </section>  
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="stef" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Stefani Driscoll Photography</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="stef_1.jpeg">
+	  </section>
+    <section>
+	    <img src="stef_2.jpeg">
+	  </section>
+    <section>
+	    <img src="stef_3.jpeg">
+    </section>  
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="dg" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Dressage Geelong Inc.</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="dg_1.png">
+	  </section>
+    <section>
+	    <img src="dg_2.jpeg">
+	  </section>
+    <section>
+	    <img src="dg_3.jpeg">
+    </section>  
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+<div id="critta" data-role="page" data-type="block" data-theme="c" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Critta's Contracting</h1>
+		<a href="#home" data-icon="home" data-transition="flip" data-theme="c">home</a>
+	</div><!-- /header -->
+	<div data-role="content" class="content">
+	  <section>
+	    <img src="critta_1.jpeg">
+	  </section>
+    <section>
+	    <img src="critta_2.jpeg">
+	  </section>
+	</div><!-- /content -->	
+</div><!-- /page -->
+
+</body>
+</html>
